@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="myForm" action="sendmail.jsp" method="post">
+<table>
+	<tbody>
+	<tr>	
+		<td> To: </td>
+		<td><input type="text" name="to" value="" size="50"/></td>
+	</tr>
+	<tr>	
+		<td> Subject: </td>
+		<td><input type="text" name="subject" value="" size="50"/></td>
+	</tr>
+	<tr>	
+		<td> Message: </td>
+		<td><textarea name="message" rows="4" cols="50"/></textarea></td>
+	</tr>
+	</tbody>
+</table>
+<input type="hidden" name="hidden" value="<%= result %>"/>
+<input type="reset" name="clear" value="Clear"/>
+<input type="submit" name="send" value="Send"/>
+
+</form>
+<form method="post" action="logoutprocess.jsp">
+        <input type="submit" value="Logout">
+</form>
+
+</body>
+</html>
